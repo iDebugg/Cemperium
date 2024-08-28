@@ -1,0 +1,265 @@
+.transaction-history {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow:  rgba(0, 0, 0, 0.1);
+    width: 860px;
+  }
+  
+  .transaction-history h2 {
+    text-align: left;
+    color: #3A4856;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .transaction-container {
+    max-height: 850px; /* Set the height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+  .transaction-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #fffefe;
+    position: sticky;
+    top: 0; /* Keep the header fixed at the top */
+    z-index: 1; /* Ensure it stays above the table rows */
+  }
+  
+  th{
+    padding: 10px;
+    text-align: left;
+    font-family: poppins;
+    font-weight: 500;
+    color: #9A9A9A;
+    font-size: 10px;
+   
+  }
+  td {
+    padding: 10px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #3A4856;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 13px;
+   
+    
+  }
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  .status.successful {
+    background-color: #28a745;
+  }
+  
+  .status.failed {
+    background-color: #dc3545;
+  }
+  
+  .status.processing {
+    background-color: #6c757d;
+  }
+  
+
+  @media screen and (max-width:1440px) {
+    
+    .transaction-history {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #ffff;
+      border-radius: 20px;
+      box-shadow:  rgba(0, 0, 0, 0.1);
+      width: 620px;
+      margin-right: 20px;
+    }
+    
+    .transaction-history h2 {
+      text-align: left;
+      color: #3A4856;
+      font-family: montserrat;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    
+    .transaction-container {
+      max-height: 850px; /* Set the height of the container */
+      overflow-y: auto; /* Enable vertical scrolling */
+      scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+    
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+    .transaction-container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead {
+      background-color: #fffefe;
+      position: sticky;
+      top: 0; /* Keep the header fixed at the top */
+      z-index: 1; /* Ensure it stays above the table rows */
+    }
+    
+    th{
+      padding: 10px;
+      text-align: left;
+      font-family: poppins;
+      font-weight: 500;
+      color: #9A9A9A;
+      font-size: 10px;
+     
+    }
+    td {
+      padding: 10px 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      color: #3A4856;
+      font-family: poppins;
+      font-weight: 500;
+      font-size: 13px;
+     
+      
+    }
+  .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 15px;
+      color: white;
+      text-align: center;
+    }
+    
+    .status.successful {
+      background-color: #28a745;
+    }
+    
+    .status.failed {
+      background-color: #dc3545;
+    }
+    
+    .status.processing {
+      background-color: #6c757d;
+    }
+    
+
+
+
+
+
+
+
+
+  }
+  @media screen and (max-width:768px) {
+    
+    .transaction-history {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #ffff;
+      border-radius: 20px;
+      box-shadow:  rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-right: 20px;
+    }
+    
+    .transaction-history h2 {
+      text-align: left;
+      color: #3A4856;
+      font-family: montserrat;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    
+    .transaction-container {
+      max-height: 850px; /* Set the height of the container */
+      overflow-y: auto; /* Enable vertical scrolling */
+      scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+    
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+    .transaction-container::-webkit-scrollbar {
+      display: none;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead {
+      background-color: #fffefe;
+      position: sticky;
+      top: 0; /* Keep the header fixed at the top */
+      z-index: 1; /* Ensure it stays above the table rows */
+    }
+    
+    th{
+      padding: 10px;
+      text-align: left;
+      font-family: poppins;
+      font-weight: 500;
+      color: #9A9A9A;
+      font-size: 10px;
+     
+    }
+    td {
+      padding: 10px 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      color: #3A4856;
+      font-family: poppins;
+      font-weight: 500;
+      font-size: 13px;
+     
+      
+    }
+  .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 15px;
+      color: white;
+      text-align: center;
+    }
+    
+    .status.successful {
+      background-color: #28a745;
+    }
+    
+    .status.failed {
+      background-color: #dc3545;
+    }
+    
+    .status.processing {
+      background-color: #6c757d;
+    }
+    
+
+
+
+
+
+
+
+
+  }

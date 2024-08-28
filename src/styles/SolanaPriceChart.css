@@ -1,0 +1,357 @@
+/* src/components/SolanaPriceChart.css */
+
+.solana-price-chart {
+    background-color: #519ACE;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sol-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+  }
+  
+  .sol-price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .solana-logo {
+    margin-left: -50px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .sol-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px; 
+    color: #ffff;
+    font-family: montserrat;
+    font-weight: 700;
+  }
+  
+  .price-change {
+    font-size: 20px;
+  }
+  
+  .price-change.positive {
+    color: #ffff; 
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .price-change.negative {
+    color: #ffff; 
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .sol-chart-container {
+    width: 70%;
+    height: 50px;
+  }
+  
+
+  @media screen and (max-width :1440px) {
+
+/* src/components/SolanaPriceChart.css */
+
+.solana-price-chart {
+  background-color: #519ACE;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sol-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.sol-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solana-logo {
+  margin-left: -50px;
+  width: 40px;
+  height: 40px;
+}
+
+.sol-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px; 
+  color: #ffff;
+  font-family: montserrat;
+  font-weight: 700;
+}
+
+.price-change {
+  font-size: 20px;
+}
+
+.price-change.positive {
+  color: #ffff; 
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.price-change.negative {
+  color: #ffff; 
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sol-chart-container {
+  width: 70%;
+  height: 50px;
+}
+
+
+
+  }
+
+
+
+  @media screen and (max-width :1280px) {
+
+    /* src/components/SolanaPriceChart.css */
+    
+    .solana-price-chart {
+      background-color: #519ACE;
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      width: 180px;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .sol-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 180px;
+    }
+    
+    .sol-price-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .solana-logo {
+      margin-left: -30px;
+      width: 42px;
+      height: 42px;
+    }
+    
+    .sol-price {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px; 
+      color: #ffff;
+      font-family: montserrat;
+      font-weight: 700;
+    }
+    
+    .price-change {
+      font-size: 20px;
+    }
+    
+    .price-change.positive {
+      color: #ffff; 
+      font-family: poppins;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .price-change.negative {
+      color: #ffff; 
+      font-family: poppins;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .sol-chart-container {
+      width: 70%;
+      height: 50px;
+    
+    }
+    
+    
+    
+   }
+
+  @media screen and (max-width :1112px) {
+
+    /* src/components/SolanaPriceChart.css */
+    
+    .solana-price-chart {
+      background-color: #519ACE;
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      width: 150px;
+      height: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .sol-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 145px;
+    }
+    
+    .sol-price-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .solana-logo {
+      margin-left: -30px;
+      width: 42px;
+      height: 42px;
+    }
+    
+    .sol-price {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px; 
+      color: #ffff;
+      font-family: montserrat;
+      font-weight: 700;
+    }
+    
+    .price-change {
+      font-size: 20px;
+    }
+    
+    .price-change.positive {
+      color: #ffff; 
+      font-family: poppins;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .price-change.negative {
+      color: #ffff; 
+      font-family: poppins;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .sol-chart-container {
+      width: 60%;
+      height: 50px;
+
+    
+    }
+    
+    
+    
+      }
+
+  @media screen and (max-width :430px) {
+
+        /* src/components/SolanaPriceChart.css */
+        
+        .solana-price-chart {
+          background-color: #519ACE;
+          border-radius: 20px;
+          color: white;
+          padding: 10px;
+          width: 90px;
+          height: 90px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .sol-info-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100px;
+        }
+        
+        .sol-price-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        
+        .solana-logo {
+          margin-left: 0px;
+          width: 42px;
+          height: 42px;
+        }
+        
+        .sol-price {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 5px; 
+          color: #ffff;
+          font-family: montserrat;
+          font-weight: 700;
+        }
+        
+        .price-change {
+          font-size: 20px;
+        }
+        
+        .price-change.positive {
+          color: #ffff; 
+          font-family: poppins;
+          font-weight: 600;
+          font-size: 18px;
+        }
+        
+        .price-change.negative {
+          color: #ffff; 
+          font-family: poppins;
+          font-weight: 600;
+          font-size: 18px;
+        }
+        
+        .sol-chart-container {
+          display: none;
+    
+        
+        }
+        
+        
+        
+          }  
+ 

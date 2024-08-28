@@ -1,0 +1,360 @@
+#data-container.cryptocurrencyPage-data-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden; /* Hide the scrollbar */
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  
+}
+
+.cryptocurrencyPage-scroll-content {
+    height: calc(100% - 40px); /* Adjust height to account for header */
+    overflow-y: auto; /* Enable scrolling within the inner container */
+    padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+    box-sizing: border-box;
+}
+
+.cryptocurrencyPage-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+    position: sticky; /* Fix the header */
+    top: 0; /* Stick the header to the top */
+    z-index: 1; /* Ensure the header is above the other content */
+    border-bottom: none;
+    
+}
+
+.cryptocurrencyPage-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cryptocurrencyPage-header .cryptocurrencyPage-cell {
+    color: #9A9A9A;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.cryptocurrencyPage-cell {
+    flex: 1;
+    text-align: center;
+}
+
+.cryptocurrencyPage-coin-info {
+    display: flex;
+    align-items: center;
+}
+
+.cryptocurrencyPage-coin-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.cryptocurrencyPage-coin-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.cryptocurrencyPage-buy-button {
+    padding: 5px;
+    background-color: #519ACE;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    margin-left: 120px;
+}
+
+.cryptocurrencyPage-buy-button:hover {
+    background-color: #3f94d1;
+}
+
+.cryptocurrencyPage-positive-change {
+    color: green;
+}
+
+.cryptocurrencyPage-negative-change {
+    color: red;
+}
+
+/* Hide scrollbar but still allow scrolling */
+.cryptocurrencyPage-scroll-content::-webkit-scrollbar {
+    display: none;
+}
+
+.cryptocurrencyPage-scroll-content {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.cryptocurrencyPage-miniNameAbbrevation {
+    font-size: 12px;
+    font-family: Poppins;
+    color: #9A9A9A;
+}
+
+.cryptocurrencyPage-CryptocurrenciesWord {
+    color: #3A4856;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:1440px) {
+    #data-container.cryptocurrencyPage-data-container {
+        width: 100%;
+        height: 400px;
+        overflow: hidden; /* Hide the scrollbar */
+        border: none;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+      
+    }
+    
+    .cryptocurrencyPage-scroll-content {
+        height: calc(100% - 40px); /* Adjust height to account for header */
+        overflow-y: auto; /* Enable scrolling within the inner container */
+        padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+        box-sizing: border-box;
+    }
+    
+    .cryptocurrencyPage-header {
+        display: flex;
+        gap: 80px;
+        font-weight: bold;
+        padding: 10px 0;
+        position: sticky; /* Fix the header */
+        top: 0; /* Stick the header to the top */
+        z-index: 1; /* Ensure the header is above the other content */
+        border-bottom: none;
+        
+    }
+    
+    .cryptocurrencyPage-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .cryptocurrencyPage-header .cryptocurrencyPage-cell {
+        color: #9A9A9A;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .cryptocurrencyPage-cell {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .cryptocurrencyPage-coin-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .cryptocurrencyPage-coin-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .cryptocurrencyPage-coin-name {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .cryptocurrencyPage-buy-button {
+        padding: 5px;
+        background-color: #519ACE;
+        font-family: Poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        margin-left: 120px;
+    }
+    
+    .cryptocurrencyPage-buy-button:hover {
+        background-color: #3f94d1;
+    }
+    
+    .cryptocurrencyPage-positive-change {
+        color: green;
+    }
+    
+    .cryptocurrencyPage-negative-change {
+        color: red;
+    }
+    
+    /* Hide scrollbar but still allow scrolling */
+    .cryptocurrencyPage-scroll-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .cryptocurrencyPage-scroll-content {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    .cryptocurrencyPage-miniNameAbbrevation {
+        font-size: 12px;
+        font-family: Poppins;
+        color: #9A9A9A;
+    }
+    
+    .cryptocurrencyPage-CryptocurrenciesWord {
+        color: #3A4856;
+        font-family: Montserrat;
+        font-weight: 600;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    #data-container.cryptocurrencyPage-data-container {
+        width: 100%;
+        height: 400px;
+        overflow: hidden; /* Hide the scrollbar */
+        border: none;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+      
+    }
+    
+    .cryptocurrencyPage-scroll-content {
+        height: calc(100% - 40px); /* Adjust height to account for header */
+        overflow-y: auto; /* Enable scrolling within the inner container */
+        padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+        box-sizing: border-box;
+    }
+    
+    .cryptocurrencyPage-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px 0;
+        position: sticky; /* Fix the header */
+        top: 0; /* Stick the header to the top */
+        z-index: 1; /* Ensure the header is above the other content */
+        border-bottom: none;
+        
+    }
+    
+    .cryptocurrencyPage-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .cryptocurrencyPage-header .cryptocurrencyPage-cell {
+        color: #9A9A9A;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .cryptocurrencyPage-cell {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .cryptocurrencyPage-coin-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .cryptocurrencyPage-coin-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .cryptocurrencyPage-coin-name {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .cryptocurrencyPage-buy-button {
+        padding: 5px;
+        background-color: #519ACE;
+        font-family: Poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    
+    .cryptocurrencyPage-buy-button:hover {
+        background-color: #3f94d1;
+    }
+    
+    .cryptocurrencyPage-positive-change {
+        color: green;
+    }
+    
+    .cryptocurrencyPage-negative-change {
+        color: red;
+    }
+    
+    /* Hide scrollbar but still allow scrolling */
+    .cryptocurrencyPage-scroll-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .cryptocurrencyPage-scroll-content {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    
+    .cryptocurrencyPage-miniNameAbbrevation {
+        font-size: 12px;
+        font-family: Poppins;
+        color: #9A9A9A;
+    }
+    
+    .cryptocurrencyPage-CryptocurrenciesWord {
+        color: #3A4856;
+        font-family: Montserrat;
+        font-weight: 600;
+    }
+    
+}
+
+
+

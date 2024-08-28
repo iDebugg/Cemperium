@@ -1,0 +1,349 @@
+/* General Styles */
+.navbar-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: sticky;
+  width: 85%;
+  max-width: 90%; /* Responsive max-width */
+  margin: 10px auto; /* Center on larger screens */
+  left: 0;
+  right: 0;
+}
+
+/* Logo */
+.logo img {
+  width: 40px;
+  height: 40px;
+ 
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 60%;
+  max-width: 60%; /* Responsive max-width */
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #519ACE, #608AC9);
+  transition: all 0.5s ease;
+  z-index: 1000;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+}
+
+.overlay.active {
+  left: 0;
+}
+
+/* Cancel Button */
+.cancel-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: left ;
+}
+
+/* Logo */
+.sidebar .logo h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+/* Menu Items */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu-items a:hover {
+  color: #ff8c00;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: auto;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff7000;
+}
+
+
+@media screen and (max-width:768px) {
+  /* General Styles */
+.navbar-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: sticked;
+  width: 85%;
+  max-width: 90%; /* Responsive max-width */
+  margin: 10px auto; /* Center on larger screens */
+  left: 0;
+  right: 0;
+}
+
+/* Logo */
+.logo img {
+  width: 40px;
+  height: 40px;
+ 
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 60%;
+  max-width: 60%; /* Responsive max-width */
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 24px;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #519ACE, #608AC9);
+  transition: all 0.5s ease;
+  z-index: 1000;
+  padding-left: 20px;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+}
+
+.overlay.active {
+  left: 0;
+}
+
+/* Cancel Button */
+.cancel-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: left ;
+}
+
+/* Logo */
+.sidebar .logo h1 {
+  margin: 0;
+  padding: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+/* Menu Items */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-items li {
+  margin: 10px 0;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu-items a:hover {
+  color: #ff8c00;
+}
+
+/* Logout Button */
+.logout-button {
+  margin-top: auto;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff7000;
+}
+
+
+
+
+}

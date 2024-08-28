@@ -1,0 +1,469 @@
+#data-containerCrpto {
+    width: 890px;
+    height: 300px;
+    overflow: hidden; 
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+.scroll-content {
+    height: calc(100% - 40px); 
+    overflow-y: auto; 
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px 0;
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+    border-bottom: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}.header .cell{
+    color: #9A9A9A;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.cell {
+    flex: 1;
+    text-align: center;
+}
+
+.coin-info {
+    display: flex;
+    align-items: center;
+}
+
+.coin-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.coin-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.buy-button {
+    padding: 5px;
+    background-color: #519ACE;
+    font-family: poppins;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.buy-button:hover {
+    background-color: #3f94d1;
+}
+
+.positive-change {
+    color: green;
+}
+
+.negative-change {
+    color: red;
+}
+
+.scroll-content::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-content {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+.miniNameAbbrevations{
+    font-size: 12px;
+    font-family: poppins;
+    color: #9A9A9A;
+}
+.CryptocurrenciesWord{
+    color: #3A4856;
+    font-family: montserrat;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width :1440px) {
+    
+    #data-containerCrpto {
+        width: 660px;
+        height: 240px;
+        overflow: hidden; /* Hide the scrollbar */
+        border: none;
+        padding: 2;
+        box-sizing: border-box;
+        position: relative;
+     
+    }
+    
+    .scroll-content {
+        height: calc(100% - 40px); /* Adjust height to account for header */
+        overflow-y: auto; /* Enable scrolling within the inner container */
+        padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+        box-sizing: border-box;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 2px 0;
+        position: sticky; /* Fix the header */
+        top: 0; /* Stick the header to the top */
+        z-index: 1; /* Ensure the header is above the other content */
+        border-bottom: none;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }.header .cell{
+        color: #9A9A9A;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .cell {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .coin-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .coin-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .coin-name {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        color: #484848;
+        font-weight: 500;
+        font-family: poppins;
+        font-size: 16px;
+    }
+    .cellStyle{
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 12px;
+        color: #3A4856;
+    }
+    
+    .buy-button {
+        padding: 2px;
+        background-color: #519ACE;
+        font-family: poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 10px;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    
+    .buy-button:hover {
+        background-color: #3f94d1;
+    }
+    
+    .positive-change {
+        color: green;
+    }
+    
+    .negative-change {
+        color: red;
+    }
+    
+    /* Hide scrollbar but still allow scrolling */
+    .scroll-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scroll-content {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .miniNameAbbrevations{
+        font-size: 12px;
+        font-family: poppins;
+        color: #9A9A9A;
+    }
+    .CryptocurrenciesWord{
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width :768px) {
+    
+    #data-containerCrpto {
+        width: 100vw;
+        height: 340px;
+        overflow: hidden; /* Hide the scrollbar */
+        border: none;
+        padding: 0;
+        box-sizing: border-box;
+        position: relative;
+        
+    }
+    
+    .scroll-content {
+        height: calc(100% - 40px); /* Adjust height to account for header */
+        overflow-y: auto; /* Enable scrolling within the inner container */
+        padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+        box-sizing: border-box;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px 0;
+       
+        position: sticky; /* Fix the header */
+        top: 0; /* Stick the header to the top */
+        z-index: 1; /* Ensure the header is above the other content */
+        border-bottom: none;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }.header .cell{
+        color: #9A9A9A;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .cell {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .coin-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .coin-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .coin-name {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .buy-button {
+        padding: 5px;
+        background-color: #519ACE;
+        font-family: poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1px;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    
+    .buy-button:hover {
+        background-color: #3f94d1;
+    }
+    
+    .positive-change {
+        color: green;
+    }
+    
+    .negative-change {
+        color: red;
+    }
+    
+    /* Hide scrollbar but still allow scrolling */
+    .scroll-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scroll-content {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .miniNameAbbrevations{
+        font-size: 12px;
+        font-family: poppins;
+        color: #9A9A9A;
+    }
+    .CryptocurrenciesWord{
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width :768px) {
+    
+    #data-containerCrpto {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Hide the scrollbar */
+        border: none;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .scroll-content {
+        height: calc(100% - 40px); /* Adjust height to account for header */
+        overflow-y: auto; /* Enable scrolling within the inner container */
+        padding: 0 10px 10px; /* Adjust padding to ensure full visibility */
+        box-sizing: border-box;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px 0;
+        position: sticky; /* Fix the header */
+        top: 0; /* Stick the header to the top */
+        z-index: 1; /* Ensure the header is above the other content */
+        border-bottom: none;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }.header .cell{
+        color: #9A9A9A;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .cell {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .coin-info {
+        display: flex;
+        align-items: center;
+    }
+    
+    .coin-info img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .assetNameBig,
+    .marketCapp{
+        display: none;
+    }
+    
+    
+    .buy-button {
+        padding: 5px;
+        background-color: #519ACE;
+        font-family: poppins;
+        font-weight: 500;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    
+    .buy-button:hover {
+        background-color: #3f94d1;
+    }
+    
+    .positive-change {
+        color: green;
+    }
+    
+    .negative-change {
+        color: red;
+    }
+    
+    /* Hide scrollbar but still allow scrolling */
+    .scroll-content::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scroll-content {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .miniNameAbbrevations{
+        font-size: 16px;
+        font-family: poppins;
+        color: #484848;
+        font-weight: 500;
+    }
+    .CryptocurrenciesWord{
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+    }
+}

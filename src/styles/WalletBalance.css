@@ -1,0 +1,408 @@
+
+.balance-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.currentBalanceText{
+    color: #ffff;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.balance-header .icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.balance-display {
+    margin-bottom: 10px;
+    color: #ffff;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.wallet-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+  
+       
+}
+
+.copied-message {
+    position: absolute;
+    top: 300px; /* Adjust based on your layout */
+    right: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.walletAndCopyIcon{
+    background: #85AAD7;
+    display: flex;
+    border-radius: 5px;
+    padding:3px;
+}
+
+.wallet-address .icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.actions-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-button span {
+    margin-top: 5px;
+}
+.transactionBtn{
+    width: 50px;
+    height: 50px;
+    background:  #85AAD7;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+}
+.transactionBtnIcon{
+    font-size: 22px;
+}
+
+@media screen and (max-width :1440px){
+    
+.balance-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.currentBalanceText{
+    color: #ffff;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.balance-header .icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.balance-display {
+    margin-bottom: 10px;
+    color: #ffff;
+    font-family: poppins;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.wallet-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.copied-message {
+    position: absolute;
+    top: 300px; /* Adjust based on your layout */
+    right: 130px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.walletAndCopyIcon{
+    background: #85AAD7;
+    display: flex;
+    border-radius: 5px;
+    padding:3px;
+}
+
+.wallet-address .icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.actions-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-button span {
+    margin-top: 5px;
+}
+.transactionBtn{
+    width: 50px;
+    height: 50px;
+    background:  #85AAD7;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+}
+.transactionBtnIcon{
+    font-size: 18px;
+}
+
+
+
+
+
+}
+@media screen and (max-width :1370px){
+    
+  
+    .copied-message {
+        position: absolute;
+        top: 300px; /* Adjust based on your layout */
+        right: 150px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+  
+    
+    
+    
+    
+    
+    }
+@media screen and (max-width :1280px){
+    
+    .balance-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .currentBalanceText{
+        color: #ffff;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .balance-header .icon {
+        margin-left: 10px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .balance-display {
+        margin-bottom: 10px;
+        color: #ffff;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 45px;
+    }
+    
+    .icon {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .wallet-address {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        width: 100%;
+        text-align: center; 
+    }
+    .copied-message {
+        position: absolute;
+        top: 300px; /* Adjust based on your layout */
+        right: 200px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+    
+    .wallet-address .icon {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    
+    .actions-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .action-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .action-button span {
+        margin-top: 5px;
+    }
+    .transactionBtn{
+        width: 50px;
+        height: 50px;
+        background:  #85AAD7;
+        color: #ffff;
+        border: none;
+        border-radius: 10px;
+    }
+    .transactionBtnIcon{
+        font-size: 18px;
+    }
+    
+    
+    
+    
+    
+    }
+@media screen and (max-width :768){
+    
+        .balance-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .currentBalanceText{
+            color: #ffff;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        
+        .balance-header .icon {
+            margin-left: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .balance-display {
+            margin-bottom: 10px;
+            color: #ffff;
+            font-family: poppins;
+            font-weight: 500;
+            font-size: 45px;
+        }
+        
+        .icon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        
+        .wallet-address {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            width: 100%;
+            text-align: center; 
+        }
+        .copied-message {
+            position: absolute;
+            top: 100px; /* Adjust based on your layout */
+            right: 200px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .wallet-address .icon {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        .actions-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .action-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .action-button span {
+            margin-top: 5px;
+        }
+        .transactionBtn{
+            width: 50px;
+            height: 50px;
+            background:  #85AAD7;
+            color: #ffff;
+            border: none;
+            border-radius: 10px;
+        }
+        .transactionBtnIcon{
+            font-size: 18px;
+        }
+        
+        
+        
+        
+        
+        
+        }    
+    

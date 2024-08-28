@@ -1,0 +1,115 @@
+/* TransactionHistoryMobile.css */
+
+.transaction-history-mobile {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .transaction-history-mobile  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3A4856;
+  }
+
+  
+  .filter-dropdown-mobile {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    color: #9A9A9A;
+  }
+  
+  .filter-group-mobile {
+    margin-bottom: 15px;
+  }
+  
+  .filter-group-mobile h3 {
+    margin-bottom: 10px;
+  }
+  
+  .filter-group-mobile button {
+    margin: 5px 10px 5px 0;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #d3d4d7;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #9A9A9A;
+    font-size: 12px;
+    font-family: montserrat;
+    font-weight: 600;
+  }
+  
+  .filter-group-mobile button.active-mobile {
+    background-color: #d3d4d7;
+  }
+  
+  .transaction-container-mobile {
+    margin-top: 20px;
+  }
+  
+  .transaction-item-mobile {
+    padding: 15px;
+    border-bottom: 1px solid #d3d4d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transaction-item-mobile .type-mobile,
+  .transaction-item-mobile .status-mobile,
+  .transaction-item-mobile .address-mobile,
+  .transaction-item-mobile .amount-mobile,
+  .transaction-item-mobile .usd-mobile,
+  .transaction-item-mobile .date-mobile {
+    width: 15%;
+    text-align: left;
+  }
+  
+  .transaction-item-mobile .status-mobile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-indicator-mobile {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .status-indicator-mobile.successful-mobile {
+    background-color: #28a745;
+  }
+  
+  .status-indicator-mobile.failed-mobile {
+    background-color: #dc3545;
+  }
+  
+  .status-indicator-mobile.processing-mobile {
+    background-color: #6c757d;
+  }
+  .filter-button-mobile {
+    background-color: #ffff;
+    border:  1px solid #9A9A9A ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .transaction-container-mobile td span{
+    font-size: 10px;
+    color: #51563a ;
+    
+  }
+  .transaction-container-mobile td{
+    font-size: 11px;
+    color: #51563a;
+
+  }
+  
+  

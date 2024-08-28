@@ -1,0 +1,19 @@
+.transaction-history-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .transaction-history{
+        display: none;
+    }
+    .calendar-container{
+        display: none;
+    }
+    .filters{
+        display: none;
+    }
+    .transaction-history-mobile{
+        display: block;
+    }
+}

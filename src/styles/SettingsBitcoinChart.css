@@ -1,0 +1,417 @@
+/* src/BitcoinChart.css */
+.chart-container-settings {
+    padding: 10px;
+    border-radius: 10px;
+    width: 1050px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.chart-title-settings {
+    color: black;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.chart-title-settings span {
+    color: #888;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+
+.current-price-settings {
+    line-height: 29.26px;
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 35px;
+    color: #519ACE;
+}
+
+.marketOverviewText-settings {
+    font-family: montserrat;
+    font-weight: 600;
+    color: #9A9A9A;
+}
+
+.time-frame-selector-settings {
+    margin-top: 10px;
+    width: 190px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #dfdede;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.time-frame-button-settings {
+    font-family: poppins;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin: 0 5px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background:#dfdede ;
+    transition: background-color 0.3s;
+    color: #727272;
+}
+
+.time-frame-button-settings.active-settings {
+    background-color: #fff;
+    color: #888;
+}
+
+.recharts-cartesian-axis-tick-value-settings {
+    font-size: 12px;
+}
+
+.recharts-tooltip-wrapper-settings {
+    font-size: 14px;
+}
+
+.bitcoingImg-settings {
+    width: 50px;
+    height: 50px;
+}
+
+.marketOverviewAndFrameSelector-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1440px) {
+    /* src/BitcoinChart.css */
+    .chart-container-settings {
+        padding: 10px;
+        border-radius: 10px;
+        width: 760px;
+        height: 250px;
+    }
+
+    .chart-title-settings {
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .current-price-settings {
+        line-height: 29.26px;
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 30px;
+        color: #519ACE;
+    }
+
+    .marketOverviewText-settings {
+        font-family: montserrat;
+        font-weight: 600;
+        color: #9A9A9A;
+    }
+
+    .time-frame-selector-settings {
+        margin-top: 10px;
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #dfdede;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-frame-button-settings {
+        font-family: poppins;
+        font-weight: 600;
+        padding: 3px 10px;
+        margin: 0 5px;
+        font-size: 13px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        color: #727272;
+    }
+
+    .time-frame-button-settings.active-settings {
+        background-color: #fff;
+        color: #888;
+    }
+
+    .recharts-cartesian-axis-tick-value-settings {
+        font-size: 12px;
+    }
+
+    .recharts-tooltip-wrapper-settings {
+        font-size: 14px;
+    }
+
+    .bitcoingImg-settings {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marketOverviewAndFrameSelector-settings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    /* src/BitcoinChart.css */
+    .chart-container-settings {
+        background-color: #ffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 600px;
+        height: 310px;
+    }
+
+    .chart-title-settings {
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .current-price-settings {
+        line-height: 29.26px;
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 30px;
+        color: #519ACE;
+    }
+
+    .marketOverviewText-settings {
+        font-family: montserrat;
+        font-weight: 600;
+        color: #9A9A9A;
+    }
+
+    .time-frame-selector-settings {
+        margin-top: 10px;
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #dfdede;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-frame-button-settings {
+        font-family: poppins;
+        font-weight: 600;
+        padding: 3px 10px;
+        margin: 0 5px;
+        font-size: 13px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        color: #727272;
+    }
+
+    .time-frame-button-settings.active-settings {
+        background-color: #fff;
+        color: #888;
+    }
+
+    .recharts-cartesian-axis-tick-value-settings {
+        font-size: 12px;
+    }
+
+    .recharts-tooltip-wrapper-settings {
+        font-size: 14px;
+    }
+
+    .bitcoingImg-settings {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marketOverviewAndFrameSelector-settings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    /* src/BitcoinChart.css */
+    .chart-container-settings {
+        background-color: #ffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 510px;
+        height: 250px;
+    }
+
+    .chart-title-settings {
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .current-price-settings {
+        line-height: 2.26px;
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 20px;
+        color: #519ACE;
+    }
+
+    .marketOverviewText-settings {
+        font-family: montserrat;
+        font-weight: 600;
+        color: #9A9A9A;
+    }
+
+    .time-frame-selector-settings {
+        margin-top: 10px;
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #dfdede;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-frame-button-settings {
+        font-family: poppins;
+        font-weight: 600;
+        padding: 3px 10px;
+        margin: 0 5px;
+        font-size: 13px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        color: #727272;
+    }
+
+    .time-frame-button-settings.active-settings {
+        background-color: #fff;
+        color: #888;
+    }
+
+    .recharts-cartesian-axis-tick-value-settings {
+        font-size: 12px;
+    }
+
+    .recharts-tooltip-wrapper-settings {
+        font-size: 14px;
+    }
+
+    .bitcoingImg-settings {
+        width: 30px;
+        height: 30px;
+    }
+
+    .marketOverviewAndFrameSelector-settings {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* src/BitcoinChart.css */
+    .chart-container-settings {
+        background-color: #ffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        height: 250px;
+    }
+
+    .chart-title-settings {
+        color: #3A4856;
+        font-family: montserrat;
+        font-weight: 600;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+
+    .current-price-settings {
+        line-height: 2.26px;
+        font-family: montserrat;
+        font-weight: 700;
+        font-size: 20px;
+        color: #519ACE;
+    }
+
+    .marketOverviewText-settings {
+        font-family: montserrat;
+        font-weight: 600;
+        color: #9A9A9A;
+    }
+
+    .time-frame-selector-settings {
+        margin-top: 10px;
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        background-color: #dfdede;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .time-frame-button-settings {
+        font-family: poppins;
+        font-weight: 600;
+        padding: 3px 10px;
+        margin: 0 5px;
+        font-size: 13px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        color: #727272;
+    }
+
+    .time-frame-button-settings.active-settings {
+        background-color: #fff;
+        color: #888;
+    }
+
+    .recharts-cartesian-axis-tick-value-settings {
+        font-size: 12px;
+    }
+
+    .recharts-tooltip-wrapper-settings {
+        font-size: 14px;
+    }
+
+    .bitcoingImg-settings {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marketOverviewAndFrameSelector-settings {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+

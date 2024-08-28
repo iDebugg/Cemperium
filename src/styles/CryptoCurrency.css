@@ -1,0 +1,126 @@
+.CryptocurrenciesPg{
+    width: 100%;
+    height: 440px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+   
+}
+.CryptoPageDiv{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    display: grid;
+    gap: 30px;
+    
+}
+.CryptoPageDiv h2{
+    color: #519ACE;
+    font-family: poppins;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    font-size: 36px;
+}
+.PolularCryptoSearch{
+    text-align: center;
+    
+}
+.CryptoPagesearchInput{
+    padding-left: 30px;
+    background:  #ffff;
+    width: 270px;
+    height: 45px;
+    border: none;
+    border-radius: 18px;
+    font-family: Poppins;
+}
+@media screen and (max-width:1440px) {
+    .CryptocurrenciesPg{
+        width: 97%;
+        height: 400px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 20px;
+       
+    }
+    .CryptoPageDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        display: grid;
+        gap: 30px;
+        
+    }
+    .CryptoPageDiv h2{
+        color: #519ACE;
+        font-family: poppins;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: center;
+        font-size: 36px;
+    }
+    .PolularCryptoSearch{
+        text-align: center;
+        
+    }
+    .CryptoPagesearchInput{
+        padding-left: 30px;
+        background:  #ffff;
+        width: 270px;
+        height: 45px;
+        border: none;
+        border-radius: 18px;
+        font-family: Poppins;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .CryptocurrenciesPg{
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        border-radius: 20px;
+        
+       
+       
+    }
+    .CryptoPageDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 10px;
+        margin-top: 10px;
+        border-radius: 15px;
+        display: grid;
+        gap: 30px;
+        height: 100vh;
+       
+    }
+    .CryptoPageDiv h2{
+        color: #519ACE;
+        font-family: poppins;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: center;
+        font-size: 26px;
+   
+    }
+    .PolularCryptoSearch{
+        text-align: center; 
+    }
+    .CryptoPagesearchInput{
+        padding-left: 30px;
+        background:  #ffff;
+        width: 270px;
+        height: 45px;
+        border: none;
+        border-radius: 18px;
+        font-family: Poppins;
+    } 
+ 
+}

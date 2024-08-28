@@ -1,0 +1,233 @@
+.assets-containerWallets {
+  width: 950px;
+  background: #fff;
+  height: 420px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assets-headerWallets {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.assets-headerWallets h2{
+  color: #3A4856;
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.assets-tableWallets {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.assets-tableWallets th{
+  padding: 15px;
+ 
+}
+
+.assets-tableWallets td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #3A4856;
+  font-family: poppins;
+  font-weight: 500;
+}
+.assets-tableWallets th {
+  background-color: #ffff;
+  font-weight: bold;
+}
+
+.assets-tableWallets td {
+  vertical-align: middle;
+}
+
+.coin-imageWallets {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.coin-nameWallets {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.miniNameAbbrevationWallets {
+  font-size: 12px;
+  color: #888;
+}
+
+.left-alignWallets {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.center-alignWallets {
+  text-align: center;
+}
+
+.right-alignWallets {
+  text-align: right;
+}
+
+.assets-body-containerWallets {
+  max-height: 350px; /* Adjust height to show 7 items */
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.assets-body-containerWallets::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+.assetsSearchInputWallets {
+  padding: 5px;
+  margin-left: 10px;
+  font-family: poppins;
+  border: none;
+  color: #888;
+}
+.assetsSearchInputWallets:focus {
+  border: none;
+  outline: none;
+ 
+}
+
+.search-buttonWallets,
+.search-cancel-buttonWallets {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  background: white;
+}
+
+@media screen and (max-width:1440px) {
+  .assets-containerWallets {
+    width: 680px;
+    background: #fff;
+    height: 340px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assets-headerWallets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .assets-headerWallets h2{
+    color: #3A4856;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .assets-tableWallets {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .assets-tableWallets th{
+    padding: 15px;
+   
+  }
+  
+  .assets-tableWallets td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #3A4856;
+    font-family: poppins;
+    font-weight: 500;
+  }
+  .assets-tableWallets th {
+    background-color: #ffff;
+    font-weight: bold;
+  }
+  
+  .assets-tableWallets td {
+    vertical-align: middle;
+  }
+  
+  .coin-imageWallets {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .coin-nameWallets {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .miniNameAbbrevationWallets {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .left-alignWallets {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .center-alignWallets {
+    text-align: center;
+  }
+  
+  .right-alignWallets {
+    text-align: right;
+  }
+  
+  .assets-body-containerWallets {
+    max-height: 350px; /* Adjust height to show 7 items */
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .assets-body-containerWallets::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  .assetsSearchInputWallets {
+    padding: 5px;
+    margin-left: 10px;
+    font-family: poppins;
+    border: none;
+    color: #888;
+  }
+  .assetsSearchInputWallets:focus {
+    border: none;
+    outline: none;
+   
+  }
+  
+  .search-buttonWallets,
+  .search-cancel-buttonWallets {
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    color: #888;
+    font-size: 20px;
+    background: white;
+  }
+}

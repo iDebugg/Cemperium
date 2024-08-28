@@ -1,0 +1,1200 @@
+body{
+    max-width: 2000px;
+}
+.homePageBackground{
+    background: rgb(243, 243, 243);
+    padding-left: 30px;
+    padding-top: 15px;
+    display: flex;
+    gap: 30px;
+}
+.sideBar{
+    height: 95vh;
+    width: 250px;
+    background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.cemperiumLogoHomePage{
+    width: 190px;
+}
+
+
+.listIcons{
+    color: #F1F1F1;
+    width: 32px;
+    margin-right: 18px;
+}
+
+
+.icon{
+    /* color: white; */
+    min-width: 40px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+}
+ li{
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ li a{
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 90%;
+    /* padding-left: 10px; */
+    align-items: center;
+    border-radius: 20px;
+    /* transition: all 1s; */
+    color: white;   
+}
+.menu-links .nav-link.active .nav-menu-link {
+    color: #4a96cc;
+    background-color: white;
+    padding-right: 10px;
+ 
+}
+  
+li a:active{
+    color: #519ACE;
+    background-color: white;
+    padding-left: 20px  ;
+    width: 90%;
+}
+.nav-text{
+    /* color: white; */
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+}
+ .menu-bar{
+    
+    height: calc(90% - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+ul{
+    margin-left: -20px;
+}
+.searchDiv{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff; /* Background color of the div */
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow definition */
+    display: flex;
+    gap: 1090px;
+}
+.searchInput{
+    padding-left: 30px;
+    background:  #F1F1F1;
+    width: 270px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;
+}
+.messageIcon{
+    font-weight: 80px;
+}
+.profilePicImg{
+    width: 40px;
+    height: 40px;
+}
+.nav-link{
+    margin-left: -20px;
+}
+.chartsDiv{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    display: flex;
+    gap: 30px;
+}
+  .homePageDisplayDiv{
+        display: grid;
+        gap: 2px;
+    }
+
+.marketOverviewAndCryptocurrencies{
+    display: grid;
+    gap: 10px;
+    width: 900px;
+    height: 850px;
+   
+    
+}
+.coinsRatesDiv{
+    display: flex;
+    gap: 10px;
+}
+.coinsRates{
+    width: 250px;
+    height: 120px;
+    background-color: #519ACE;
+    border-radius: 15px;
+    padding: 5px;
+}
+.MarketOverview{
+    width: 780px;
+    height: 300px;
+    background-color: #ffffff; /* Background color of the div */
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+}
+.Cryptocurrencies{
+    width: 830px;
+    height: 340px;
+   
+}
+.currentBalance{
+    background-image: linear-gradient(to right, #519ACE, #608AC9),
+    url(../assets/img/Cemperium.png);
+    background-repeat: no-repeat;
+    width: 480px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffff;
+    padding-top: 20px;
+    
+}
+.currentBalanceLayout{
+    width: 480px;
+    height: 300px;
+    background-image: url(../assets/img/Cemperium.png);
+    background-repeat: no-repeat;
+    background-position-x: 270px;
+    background-position-y: 120px;
+    background-size: 220px;
+    
+}
+.assets{
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff; /* Background color of the div */
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+}
+.input-icon {
+    position: absolute;
+    left: 350px; /* Adjust based on icon size */
+    top: 5%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #df0c0c; /* Icon color */
+  }
+
+  .loadingScreen {
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  .walletBalAndCryptoAsset{
+    display: grid;
+    gap: 15px;
+  }
+  .navbar-container{
+    display: none;
+  }
+
+
+
+  
+
+
+
+
+
+
+
+
+  @media screen and (max-width :1440px) {
+
+    .homePageBackground{
+        background: rgb(243, 243, 243);
+        padding-left: 30px;
+        padding-top: 15px;
+        display: flex;
+        gap: 30px;
+        height: 100vh;
+    }
+    .sideBar{
+        height: 95vh;
+        width: 250px;
+        background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    
+    
+    .listIcons{
+        color: #F1F1F1;
+        width: 32px;
+        margin-right: 18px;
+    }
+    
+    
+    .icon{
+        /* color: white; */
+        min-width: 40px;
+       font-size: 20px;
+       display: flex;
+       align-items: center;
+    }
+     li{
+        height: 50px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li a{
+        text-decoration: none;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        /* padding-left: 10px; */
+        align-items: center;
+        border-radius: 20px;
+        /* transition: all 1s; */
+        color: white;
+        
+    }
+    
+    .menu-links .nav-link.active .nav-menu-link {
+        color: #4a96cc;
+        background-color: white;
+     
+      }
+      
+    
+    li a:active{
+        color: #519ACE;
+        background-color: white;
+        padding-left: 20px  ;
+        width: 90%;
+    }
+    .nav-text{
+        /* color: white; */
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+    }
+     .menu-bar{
+        
+        height: calc(90% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    ul{
+        margin-left: -20px;
+    }
+    .searchDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 100%;
+        height: 50px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow definition */
+        display: flex;
+        gap: 710px;
+    }
+    .searchInput{
+        padding-left: 30px;
+        background:  #F1F1F1;
+        width: 270px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+    }
+    .messageIcon{
+        font-weight: 80px;
+    }
+    .profilePicImg{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-link{
+        margin-left: -20px;
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+        
+        border-radius: 15px; /* Optional: Adds rounded corners */
+      
+        display: flex;
+        gap: 5px;
+    }
+      .homePageDisplayDiv{
+        display: grid;
+        gap: 5px;
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 700px;
+        height: 800px;
+        
+        
+    }
+    .coinsRatesDiv{        
+        display: flex;
+        gap: 5px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 675px;
+        height: 315px;
+       
+       
+    }
+    .currentBalance{
+        background-image: linear-gradient(to right, #519ACE, #608AC9),
+        url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 270px;
+        border-radius: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #ffff;
+        
+    }
+    .currentBalanceLayout{
+        width: 350px;
+        height: 270px;
+        background-image: url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        background-size: 150px;
+        text-align: center;
+        
+    }
+    .walletBalAndCryptoAsset{
+        display: grid;
+        gap: 0px;
+      }
+    
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+    .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+      .navbar-container{
+        display: none;
+      }
+
+
+
+
+
+
+
+
+
+
+  }
+
+  @media screen and (max-width :1370px) {
+
+    .homePageBackground{
+        background: rgb(243, 243, 243);
+        padding-left: 30px;
+        padding-top: 15px;
+        display: flex;
+        gap: 20px;
+    }
+    .sideBar{
+        height: 95vh;
+        width: 250px;
+        background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    
+    
+    .listIcons{
+        color: #F1F1F1;
+        width: 32px;
+        margin-right: 18px;
+    }
+    
+    
+    .icon{
+        /* color: white; */
+        min-width: 40px;
+       font-size: 20px;
+       display: flex;
+       align-items: center;
+    }
+     li{
+        height: 50px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li a{
+        text-decoration: none;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        /* padding-left: 10px; */
+        align-items: center;
+        border-radius: 20px;
+        /* transition: all 1s; */
+        color: white;
+    
+    }
+    
+    .menu-links .nav-link.active .nav-menu-link {
+        color: #4a96cc;
+        background-color: white;
+     
+      }
+      
+    
+    li a:active{
+        color: #519ACE;
+        background-color: white;
+        padding-left: 20px  ;
+        width: 90%;
+    }
+    .nav-text{
+        /* color: white; */
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+    }
+     .menu-bar{
+        
+        height: calc(90% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    ul{
+        margin-left: -20px;
+    }
+    .searchDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        height: 50px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow definition */
+        display: flex;
+        gap: 710px;
+    }
+    .searchInput{
+        padding-left: 30px;
+        background:  #F1F1F1;
+        width: 270px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+    }
+    .messageIcon{
+        font-weight: 80px;
+    }
+    .profilePicImg{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-link{
+        margin-left: -20px;
+    }
+    .homePageDisplayDiv{
+        display: grid;
+        gap: 10px;
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+      
+        border-radius: 15px; /* Optional: Adds rounded corners */
+      
+        display: flex;
+        gap: 5px;
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 690px;
+        height: 900px;
+        
+        
+    }
+    .coinsRatesDiv{
+        display: flex;
+        gap: 10px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 830px;
+        height: 340px;
+       
+    }
+    .currentBalance{
+        background-image: linear-gradient(to right, #519ACE, #608AC9),
+        url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #ffff;
+        
+    }
+    .currentBalanceLayout{
+        width: 350px;
+        height: 300px;
+        background-image: url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        background-position-x: 270px;
+        background-position-y: 120px;
+        background-size: 220px;
+        
+    }
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+      .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+
+      .navbar-container{
+        display: none;
+      }
+
+  }
+
+  @media screen and (max-width :1280px) {
+
+    .homePageBackground{
+        background: rgb(243, 243, 243);
+        padding-left: 30px;
+        padding-top: 15px;
+        display: flex;
+        gap: 20px;
+    }
+    .sideBar{
+        height: 95vh;
+        width: 220px;
+        background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  
+    
+    
+    .listIcons{
+        color: #F1F1F1;
+        width: 32px;
+        margin-right: 18px;
+    }
+    
+    
+    .icon{
+        /* color: white; */
+        min-width: 40px;
+       font-size: 20px;
+       display: flex;
+       align-items: center;
+    }
+     li{
+        height: 50px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li a{
+        text-decoration: none;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        /* padding-left: 10px; */
+        align-items: center;
+        border-radius: 20px;
+        /* transition: all 1s; */
+        color: white;
+    }
+    
+    .menu-links .nav-link.active .nav-menu-link {
+        color: #4a96cc;
+        background-color: white;
+     
+      }
+      
+    
+    li a:active{
+        color: #519ACE;
+        background-color: white;
+        padding-left: 20px  ;
+        width: 90%;
+    }
+    .nav-text{
+        /* color: white; */
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+    }
+     .menu-bar{
+        
+        height: calc(90% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    ul{
+        margin-left: -20px;
+    }
+    .searchDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        height: 50px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow definition */
+        display: flex;
+        gap: 630px;
+    }
+    .searchInput{
+        padding-left: 30px;
+        background:  #F1F1F1;
+        width: 240px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+    }
+    .messageIcon{
+        font-weight: 80px;
+    }
+    .profilePicImg{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-link{
+        margin-left: -20px;
+    }
+    .homePageDisplayDiv{
+        display: grid;
+        gap: 10px;
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-top: 10px;
+      
+        border-radius: 15px; /* Optional: Adds rounded corners */
+      
+        display: flex;
+        gap: 5px;
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 640px;
+        height: 700px;
+        
+        
+    }
+    .coinsRatesDiv{
+        display: flex;
+        gap: 10px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 830px;
+        height: 340px;
+       
+    }
+    .currentBalance{
+        background-image: linear-gradient(to right, #519ACE, #608AC9),
+        url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #ffff;
+        
+    }
+    .currentBalanceLayout{
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        background-position-x: 270px;
+        background-position-y: 120px;
+        background-size: 220px;
+        
+    }
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+      .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+      .navbar-container{
+        display: none;
+      }
+
+
+
+  }
+
+  @media screen and (max-width :1112px) {
+    .homePageBackground{
+        background: rgb(243, 243, 243);
+        padding-left: 30px;
+        padding-top: 15px;
+        display: flex;
+        gap: 20px;
+    }
+    .sideBar{
+        height: 95vh;
+        width: 220px;
+        background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+        border-radius: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .listIcons{
+        color: #F1F1F1;
+        width: 32px;
+        margin-right: 18px;
+    }
+    
+    
+    .icon{
+     
+        min-width: 40px;
+       font-size: 20px;
+       display: flex;
+       align-items: center;
+    }
+     li{
+        height: 50px;
+        margin-top: 10px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li a{
+        text-decoration: none;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        align-items: center;
+        border-radius: 20px;
+        color: white; 
+    }
+    
+    .menu-links .nav-link.active .nav-menu-link {
+        color: #4a96cc;
+        background-color: white;
+     
+      }
+      
+    
+    li a:active{
+        color: #519ACE;
+        background-color: white;
+        padding-left: 20px  ;
+        width: 90%;
+    }
+    .nav-text{
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+    }
+     .menu-bar{
+        
+        height: calc(90% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    ul{
+        margin-left: -20px;
+    }
+    .searchDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        height: 50px;
+        background-color: #ffffff;  
+        border-radius: 15px; 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        display: flex;
+        gap: 630px;
+    }
+    .searchInput{
+        padding-left: 30px;
+        background:  #F1F1F1;
+        width: 240px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+    }
+    .messageIcon{
+        font-weight: 80px;
+    }
+    .profilePicImg{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-link{
+        margin-left: -20px;
+    }
+    .homePageDisplayDiv{
+        display: grid;
+        gap: 5px;
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 1px;
+        margin-top: 10px;
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        display: flex;
+        gap: 5px;
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 535px;
+        height: 700px;
+
+       
+        
+        
+    }
+    .coinsRatesDiv{
+        display: flex;
+        gap: 10px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 830px;
+        height: 340px;
+       
+    }
+    .currentBalance{
+        background-image: linear-gradient(to right, #519ACE, #608AC9),
+        url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        text-align: center;
+        color: #ffff;
+        
+    }
+    .currentBalanceLayout{
+        width: 300px;
+        height: 300px;
+        background-image: url(../assets/img/Cemperium.png);
+        background-repeat: no-repeat;
+        background-position-x: 270px;
+        background-position-y: 120px;
+        background-size: 220px;
+        
+    }
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+      .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+
+      .navbar-container{
+        display: none;
+      }
+
+  }
+
+ 
+
+  @media screen and (max-width :800px) {
+    .homePageBackground{
+        background: rgb(248, 245, 245);
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-right: 10px;
+        display: grid;
+        gap: 0px;
+        height: auto;
+    }
+    .sideBar{
+       display: none;
+    }
+    
+    .searchDiv{
+        display: none;
+    }
+   
+    .walletBalAndCryptoAsset{
+        display: none;
+
+      }
+    .homePageDisplayDiv{
+        display: grid;
+        gap: 5px;
+        
+
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        display: block;
+        gap: 5px;
+        
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 100%;
+        height: 700px;
+  
+    }
+    .coinsRatesDiv{
+        display: flex;
+        gap: 10px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 100% ;
+        height: 340px;
+       
+    }
+    .currentBalance{
+        display: none;
+    
+        
+    }
+    .currentBalanceLayout{
+     display: none;
+        
+    }
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+      .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+      .navbar-container{
+        display: block;
+      }
+
+
+  }
+

@@ -1,0 +1,32 @@
+.loadingPageBgLayoutDiv{
+    background: linear-gradient(to bottom, #4a96cc, #4f7bbd);
+   width: 100%;
+   height: 100%;
+}
+.loadingPageBgLayout{
+    background-image: url(/src/assets/img/Patterns.png);
+      background-repeat: no-repeat;
+      background-position: cover;
+      background-size: 1700px;
+      height: 100vh;
+      
+  }
+.loadingPageBgLayoutLogo{
+    background-image: url(/src/assets/img/Frame\ 1000001144.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px;
+    height: 100vh;
+
+}
+
+ .oooo{
+    background-image: url(/src/assets/img/Illustration.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+  
+    height: 100vh;
+ }
+
+

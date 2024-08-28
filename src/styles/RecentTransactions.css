@@ -1,0 +1,223 @@
+.recent-transactions {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 80vh;
+  }
+  
+  .recent-transactions h2 {
+    margin-bottom: 20px;
+    color:  #3A4856;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .scroll-contnt {
+    height: calc(100% - 110px); 
+    overflow-y: auto;
+    padding: 0 10px 10px; 
+    box-sizing: border-box;
+   
+}
+.scroll-contnt::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-contnt {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  
+  .filter-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #f5f5f5;
+  }
+  
+  .filter-button.active {
+    background-color: #ffff;
+    color: #9A9A9A;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .filter-dropdown {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffff;
+    color: #9A9A9A;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .filter-dropdown:focus{
+    outline: none;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .transaction-item:last-child {
+    border-bottom: none;
+  }
+  
+  .transaction-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transaction-type,
+  .transaction-amount,
+  .transaction-date {
+    margin-bottom: 5px;
+  }
+  .transaction-date{
+    font-family: poppins;
+    font-weight: 300;
+    font-size: 10px;
+    color: #3A4856;
+  }
+  .transaction-type,
+  .transaction-amount{
+    font-family: poppins;
+    font-weight: 500;
+    font-size:14px;
+    color: #3A4856;
+    line-height: 15px;
+  }
+  
+
+  @media screen and (max-width:1440px) {
+    .recent-transactions {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      height: 80vh;
+    }
+    
+    .recent-transactions h2 {
+      margin-bottom: 20px;
+      color:  #3A4856;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    
+    .filter-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .scroll-contnt {
+      height: calc(100% - 110px); 
+      overflow-y: auto;
+      padding: 0 10px 10px; 
+      box-sizing: border-box;
+     
+  }
+  .scroll-contnt::-webkit-scrollbar {
+      display: none;
+  }
+  
+  .scroll-contnt {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+    
+    .filter-button {
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+      background-color: #f5f5f5;
+    }
+    
+    .filter-button.active {
+      background-color: #ffff;
+      color: #9A9A9A;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    
+    .filter-dropdown {
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #ffff;
+      color: #9A9A9A;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .filter-dropdown:focus{
+      outline: none;
+    }
+    
+    .transaction-list {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .transaction-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .transaction-item:last-child {
+      border-bottom: none;
+    }
+    
+    .transaction-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .transaction-type,
+    .transaction-amount,
+    .transaction-date {
+      margin-bottom: 5px;
+    }
+    .transaction-date{
+      font-family: poppins;
+      font-weight: 300;
+      font-size: 10px;
+      color: #3A4856;
+    }
+    .transaction-type,
+    .transaction-amount{
+      font-family: poppins;
+      font-weight: 500;
+      font-size:14px;
+      color: #3A4856;
+      line-height: 15px;
+    }
+    
+  }
