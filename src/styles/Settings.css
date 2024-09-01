@@ -253,6 +253,127 @@ display: grid;
     }
 }
 
+@media screen and (max-width:1024px) {
+    .settingsBg{
+        background: rgb(238, 238, 238);
+        height: auto;
+        padding-top: 10px;
+    }
+    .SettingsearchDiv{
+     display: none;
+    }
+    .CemperiumLogoSettings{
+        width: 180px;
+        
+    }
+    .SettingssearchInput{
+        padding-left: 30px;
+        background:  #F1F1F1;
+        width: 270px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-family: Poppins;
+    }
+    .messageIcon{
+        font-weight: 80px;
+    }
+    .SettingsprofilePicImg{
+        width: 40px;
+        height: 40px;
+    }
+    .SettingsBitcoinChartBuyAndSell{
+        display: grid;
+        padding-left: 10px;
+        gap: 50px;
+        padding-bottom: 30px;
+
+    }
+    .backBTNDiv{
+        padding-left: 10px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    
+    }
+    .backBTNDiv button{
+        
+        background: #519ACE;
+        color: #ffff;
+        Padding :10px;
+        font-family: poppins;
+        font-weight: 500;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    .backBTNDiv button i{
+        margin-right: 5px;
+    }
+    .bitcoinPriceAndImgDiv{
+    display: flex;
+    padding-left: 10px;
+    }
+    .BitchoinCharrtDiv{
+    display: grid;
+
+
+    }
+    .BuyAndSell{
+        display: grid;
+        gap: 20px;
+    }
+    .bitcoinMarketInfo{
+        display: grid;
+        gap: 30px;
+    }
+    .bitcoinMarketInfoBoxOne{
+       display: none;
+    }
+    .bitcoinMarketInfoBoxOnes{
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        background: #ffff;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        display: block;
+    }
+    .bitcoinMarketInfoBoxOness{
+        width: 90%;
+        height: 300px;
+        padding: 10px;
+        background: #ffff;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        display: block;
+    }
+    .BuyAndSellBoxOne{
+        width: 90%;
+        height: 250px;
+        background: #ffff;
+        border-radius: 20px;
+        padding: 10px;
+       
+    }
+    .BuyAndSellBoxOnes{
+       display: none;
+       
+    }
+    .BuyAndSellBoxOne h4{
+     color: #3A4856;
+     font-family: montserrat;
+     font-weight: 600;
+     font-size: 16px;
+    }
+    .bitcoinMarketInfoBoxOness h4{
+        font-family: montserrat;
+        font-weight: 600;
+        color: #3A4856;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .settingsBg{
         background: rgb(238, 238, 238);

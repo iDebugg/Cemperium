@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import '../styles/CryptoAssets.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,50 +17,13 @@ const CryptoAssets = () => {
   const [searchVisible, setSearchVisible] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
+  // Create a ref for the input field
+  const searchInputRef = useRef(null);
+
   useEffect(() =>{
     setFilteredAssetData(data)
     setAssetListData(data)
   },[data])
-  // useEffect(() => {
-  //   const token = localStorage.getItem('token');
-
-  //   if (!token) {
-  //     console.error('Token not found in local storage');
-  //     setError('Token not found in local storage');
-  //     setLoading(false);
-  //   } else {
-  //     const config = {
-  //       headers: {
-  //         'Authorization': `Bearer ${token}`,
-  //         'Content-Type': 'application/json'
-  //       }
-  //     };
-
-  //     axios.get(`${process.env.REACT_APP_CRYPTOASSETS_API_URL}`, config)
-  //       .then(response => {
-  //         setAssetListData(response.data.myCoins);
-  //         setFilteredAssetData(response.data.myCoins);
-  //         setLoading(false);
-  //       })
-  //       .catch(error => {
-  //         console.error('Error fetching data:', error);
-  //         setError('Error fetching data');
-  //         setLoading(false);
-  //       });
-  //   }
-  // }, []);
-
-  if (loading) {
-    return <Skeleton count={10} height={50} />;
-  }
-
-  if (error) {
-    return <div>{error}</div>;
-  }
-
-  if (assetData.length === 0) {
-    return <Skeleton count={10} height={50} />;
-  }
 
   const formatPrice = (price) => {
     const number = parseFloat(price.replace(/[^0-9.-]+/g, ""));
@@ -92,6 +55,10 @@ const CryptoAssets = () => {
 
   const handleSearchClick = () => {
     setSearchVisible(true);
+    // Focus the input field when the search icon is clicked
+    setTimeout(() => {
+      searchInputRef.current.focus();
+    }, 0);
   };
 
   const handleCancelClick = () => {
@@ -112,6 +79,7 @@ const CryptoAssets = () => {
               className='assetsSearchInput'
               value={searchTerm}
               placeholder="Search for coins..."
+              ref={searchInputRef}  // Assign the ref to the input field
             />
             <button
               type="button"

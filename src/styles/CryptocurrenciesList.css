@@ -237,17 +237,16 @@
     }
 }
 
-@media screen and (max-width :768px) {
+@media screen and (max-width :1024px) {
     
     #data-containerCrpto {
-        width: 100vw;
-        height: 340px;
+        width: 100%;
+        height: 500px;
         overflow: hidden; /* Hide the scrollbar */
         border: none;
-        padding: 0;
+        padding: 0 10px;
         box-sizing: border-box;
         position: relative;
-        
     }
     
     .scroll-content {
@@ -262,7 +261,6 @@
         justify-content: space-between;
         font-weight: bold;
         padding: 10px 0;
-       
         position: sticky; /* Fix the header */
         top: 0; /* Stick the header to the top */
         z-index: 1; /* Ensure the header is above the other content */
@@ -298,11 +296,11 @@
         margin-right: 10px;
     }
     
-    .coin-name {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
+    .assetNameBig,
+    .marketCapp{
+        display: none;
     }
+    
     
     .buy-button {
         padding: 5px;
@@ -313,7 +311,7 @@
         color: white;
         border: none;
         border-radius: 5px;
-        font-size: 1px;
+        font-size: 12px;
         cursor: pointer;
         width: 60px;
         height: 30px;
@@ -342,9 +340,10 @@
         scrollbar-width: none;  /* Firefox */
     }
     .miniNameAbbrevations{
-        font-size: 12px;
+        font-size: 16px;
         font-family: poppins;
-        color: #9A9A9A;
+        color: #484848;
+        font-weight: 500;
     }
     .CryptocurrenciesWord{
         color: #3A4856;
@@ -353,7 +352,7 @@
     }
 }
 
-@media screen and (max-width :768px) {
+@media screen and (max-width :800px) {
     
     #data-containerCrpto {
         width: 100%;

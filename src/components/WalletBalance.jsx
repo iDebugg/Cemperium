@@ -8,8 +8,8 @@ import { updateWalletBalance } from '../controller/assetscontroller';
 import { updateEthWalletAddress } from '../controller/assetscontroller';
 
 const WalletBalance = () => {
-    const balance = useSelector((state)=>state.cryptoAssetsController.totalWalletBalance)
-    const ethAddress = useSelector((state) => state.cryptoAssetsController.ethWalletAddress)
+    const balance = useSelector((state) => state.cryptoAssetsController.totalWalletBalance);
+    const ethAddress = useSelector((state) => state.cryptoAssetsController.ethWalletAddress);
     const [showBalance, setShowBalance] = useState(true);
     const [copied, setCopied] = useState(false);
     const dispatch = useDispatch();
@@ -24,8 +24,7 @@ const WalletBalance = () => {
                 }
             })
             .then(response => {
-               dispatch(updateWalletBalance(response.data.estimatedUSDBalance))
-                
+                dispatch(updateWalletBalance(response.data.estimatedUSDBalance));
             })
             .catch(error => {
                 console.error('There was an error fetching the balance!', error);
@@ -41,26 +40,48 @@ const WalletBalance = () => {
             .then(response => {
                 const ethAddress = response.data.walletAddresses.ETH;
                 if (ethAddress) {
-                    dispatch(updateEthWalletAddress(ethAddress))
+                    dispatch(updateEthWalletAddress(ethAddress));
                 } else {
-                   console.log('ETH address not found');
+                    console.log('ETH address not found');
                 }
             })
             .catch(error => {
                 console.error('There was an error fetching the wallet addresses!', error);
-                
             });
         }
-    }, []);
+    }, [dispatch]);
 
     const toggleShowBalance = () => {
         setShowBalance(!showBalance);
     };
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText(ethAddress);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Hide the message after 2 seconds
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(ethAddress).then(() => {
+                console.log('Text copied to clipboard');
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000); // Hide the message after 2 seconds
+            }).catch(err => {
+                console.error('Failed to copy text to clipboard: ', err);
+            });
+        } else {
+            // Fallback for browsers that don't support navigator.clipboard
+            console.warn('Clipboard API not supported, using fallback');
+            const textArea = document.createElement("textarea");
+            textArea.value = ethAddress;
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                console.log('Text copied to clipboard using fallback');
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+            } catch (err) {
+                console.error('Failed to copy text to clipboard: ', err);
+            }
+            document.body.removeChild(textArea);
+        }
     };
 
     const formatAddress = (address) => {

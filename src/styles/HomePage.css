@@ -2,7 +2,7 @@ body{
     max-width: 2000px;
 }
 .homePageBackground{
-    background: rgb(243, 243, 243);
+    background: rgb(241, 241, 241);
     padding-left: 30px;
     padding-top: 15px;
     display: flex;
@@ -232,7 +232,7 @@ ul{
   @media screen and (max-width :1440px) {
 
     .homePageBackground{
-        background: rgb(243, 243, 243);
+        background: rgb(241, 241, 241);
         padding-left: 30px;
         padding-top: 15px;
         display: flex;
@@ -462,7 +462,7 @@ ul{
   @media screen and (max-width :1370px) {
 
     .homePageBackground{
-        background: rgb(243, 243, 243);
+        background: rgb(241, 241, 241);
         padding-left: 30px;
         padding-top: 15px;
         display: flex;
@@ -675,7 +675,7 @@ ul{
   @media screen and (max-width :1280px) {
 
     .homePageBackground{
-        background: rgb(243, 243, 243);
+        background: rgb(241, 241, 241);
         padding-left: 30px;
         padding-top: 15px;
         display: flex;
@@ -887,7 +887,7 @@ ul{
 
   @media screen and (max-width :1112px) {
     .homePageBackground{
-        background: rgb(243, 243, 243);
+        background: rgb(241, 241, 241);
         padding-left: 30px;
         padding-top: 15px;
         display: flex;
@@ -1090,11 +1090,117 @@ ul{
 
   }
 
+  @media screen and (max-width :1024px) {
+    .homePageBackground{
+        background: rgb(241, 241, 241);
+        padding-left: 10px;
+        padding-top: 4px;
+        padding-right: 10px;
+        display: grid;
+        gap: 0px;
+        height: 100vh;
+    }
+    .sideBar{
+       display: none;
+    }
+    
+    .searchDiv{
+        display: none;
+    }
+   
+    .walletBalAndCryptoAsset{
+        display: none;
+
+      }
+    .homePageDisplayDiv{
+        display: grid;
+        gap: 5px;
+        
+
+    }
+    .chartsDiv{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        display: block;
+        gap: 5px;
+        
+    }
+    
+    .marketOverviewAndCryptocurrencies{
+        display: grid;
+        gap: 10px;
+        width: 100%;
+        height: 700px;
+  
+    }
+    .coinsRatesDiv{
+        display: flex;
+        gap: 10px;
+    }
+
+    .MarketOverview{
+        width: 780px;
+        height: 300px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .Cryptocurrencies{
+        width: 100% ;
+        height: 340px;
+       
+    }
+    .currentBalance{
+        display: none;
+    
+        
+    }
+    .currentBalanceLayout{
+     display: none;
+        
+    }
+    .assets{
+        width: 500px;
+        height: 600px;
+        background-color: #ffffff; /* Background color of the div */
+        border-radius: 15px; /* Optional: Adds rounded corners */
+        box-shadow: 0px 4px 8px rgba(0.3, 0.5, 0.5, 0.4);
+    }
+    .input-icon {
+        position: absolute;
+        left: 350px; /* Adjust based on icon size */
+        top: 5%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: #df0c0c; /* Icon color */
+      }
+    
+      .loadingScreen {
+        background-color: blue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+      }
+      .navbar-container{
+        display: block;
+      }
+
+
+  }
+
  
 
   @media screen and (max-width :800px) {
     .homePageBackground{
-        background: rgb(248, 245, 245);
+        background: rgb(241, 241, 241);
         padding-left: 10px;
         padding-top: 4px;
         padding-right: 10px;

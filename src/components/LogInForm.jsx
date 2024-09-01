@@ -8,11 +8,13 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const LogInForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false); // State to manage loading animation
   const navigate = useNavigate();
 
   const handlePasswordToggle = () => {
@@ -22,6 +24,8 @@ const LogInForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (isEmailValid(email)) {
+      setLoading(true); // Start the loading animation
+
       const deviceToken = "0";
       const userData = { email, password, deviceToken };
 
@@ -33,15 +37,23 @@ const LogInForm = () => {
         if (response.status === 200) {
           const token = response.data.token;
           localStorage.setItem('token', token);
-          console.log(token)
+          console.log(token);
 
-          // Navigate to the next page
+          // Stop loading animation and navigate to the next page
+          setLoading(false);
           navigate('/Home');
         } else {
           toast.error('Login failed. Please check your credentials and try again.');
+          setLoading(false); // Stop loading animation
         }
-      } catch (err) {
-        toast.error(err.response.data.message || 'An error occurred. Please try again.');
+      }catch (err) {
+        // Improved error handling
+        if (err.response) {
+          toast.error(err.response.data.message || 'An error occurred. Please try again.');
+        } else {
+          toast.error('An unexpected error occurred. Please try again.');
+        }
+        setLoading(false); // Stop loading animation
       }
 
       setIsFormSubmitted(true);
@@ -117,14 +129,10 @@ const LogInForm = () => {
             cursor: isFormValid ? 'pointer' : 'not-allowed'
           }}
           disabled={!isFormValid}
-        >Log In
-
+        >
+          {loading ? <div className="loading-spinner"></div> : 'Log In'}
         </button>
       </form>
-
-      {isFormSubmitted && (
-        console.log("welcome home")
-      )}
     </div>
   );
 };

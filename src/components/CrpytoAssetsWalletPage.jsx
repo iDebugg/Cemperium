@@ -1,14 +1,14 @@
-import React, { useEffect, useState, Suspense } from 'react';
+import React, { useEffect, useState, Suspense, useRef } from 'react';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
-import '../styles/CrpytoAssetsWalletPage.css'
+import '../styles/CrpytoAssetsWalletPage.css';
 
 const CryptoAssetsWalletPage = () => {
-  const data = useSelector((state)=>state.cryptoAssetsController.coinList);
+  const data = useSelector((state) => state.cryptoAssetsController.coinList);
   const [assets, setAssets] = useState(data);
   const [filteredAssets, setFilteredAssets] = useState(data);
   const [loading, setLoading] = useState(false);
@@ -16,36 +16,8 @@ const CryptoAssetsWalletPage = () => {
   const [searchVisible, setSearchVisible] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
-
-  // useEffect(() => {
-  //   const token = localStorage.getItem('token');
-
-  //   if (!token) {
-  //     console.error('Token not found in local storage');
-  //     setError('Token not found in local storage');
-  //     setLoading(false);
-  //     return;
-  //   }
-
-  //   const config = {
-  //     headers: {
-  //       'Authorization': `Bearer ${token}`,
-  //       'Content-Type': 'application/json',
-  //     },
-  //   };
-
-  //   axios.get('https://api.cemperium.com/api/v1/wallet/get_coins_list', config)
-  //     .then(response => {
-  //       setAssets(response.data.myCoins);
-  //       setFilteredAssets(response.data.myCoins);
-  //       setLoading(false);
-  //     })
-  //     .catch(error => {
-  //       console.error('Error fetching data:', error);
-  //       setError('Error fetching data');
-  //       setLoading(false);
-  //     });
-  // }, []);
+  // Create a ref for the input field
+  const searchInputRef = useRef(null);
 
   const handleSearchChange = (e) => {
     const searchWord = e.currentTarget.value;
@@ -56,6 +28,10 @@ const CryptoAssetsWalletPage = () => {
 
   const handleSearchClick = () => {
     setSearchVisible(true);
+    // Focus the input field when the search icon is clicked
+    setTimeout(() => {
+      searchInputRef.current.focus();
+    }, 0);
   };
 
   const handleCancelClick = () => {
@@ -97,6 +73,7 @@ const CryptoAssetsWalletPage = () => {
               className='assetsSearchInputWallets'
               value={searchTerm}
               placeholder="Search for coins..."
+              ref={searchInputRef} // Assign the ref to the input field
             />
             <button
               type="button"
@@ -156,4 +133,5 @@ const CryptoAssetsWalletPage = () => {
     </div>
   );
 };
+
 export default CryptoAssetsWalletPage;
