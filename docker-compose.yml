@@ -1,0 +1,18 @@
+version: '3'
+services:
+  front:
+    build:
+      dockerfile: Dockerfile
+    container_name: cemperium
+    volumes:
+      - .:/app
+    depends_on:
+      - nginx
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./cemperium.conf:/etc/nginx/conf.d/default.conf
